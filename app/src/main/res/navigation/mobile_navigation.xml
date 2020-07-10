@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.cgprototype.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_my_half"
+        android:name="com.example.cgprototype.MyHalfFragment"
+        android:label="@string/menu_my_half"
+        tools:layout="@layout/fragment_my_half" />
+    <fragment
+        android:id="@+id/nav_my_completed"
+        android:name="com.example.cgprototype.MyCompletedFragment"
+        android:label="@string/menu_my_completed"
+        tools:layout="@layout/fragment_my_completed" />
+    <fragment
+        android:id="@+id/nav_my_loc"
+        android:name="com.example.cgprototype.MyLocFragment"
+        android:label="@string/menu_my_loc"
+        tools:layout="@layout/fragment_my_loc" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.cgprototype.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.cgprototype.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_tools"-->
+<!--        android:name="com.example.cgprototype.ui.tools.ToolsFragment"-->
+<!--        android:label="@string/menu_tools"-->
+<!--        tools:layout="@layout/fragment_tools" />-->
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.cgprototype.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.cgprototype.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_main"-->
+<!--        android:name="com.example.cgprototype.MainFragment"-->
+<!--        android:label="@string/menu_main"-->
+<!--        tools:layout="@layout/main_fragment" />-->
+
+
+
+</navigation>

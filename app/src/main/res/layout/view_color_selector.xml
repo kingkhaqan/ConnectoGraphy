@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:useDefaultMargins="true"
+    android:background="@android:color/white"
+    android:rowCount="2"
+    android:columnCount="3">
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+
+        <ImageView
+            android:layout_margin="@dimen/color_selector_icon_margin"
+            android:layout_width="@dimen/color_selector_tool_btn_diameter"
+            android:layout_height="@dimen/color_selector_tool_btn_diameter"
+            android:id="@+id/imageview_brush"
+            android:background="@drawable/color_selector_tool_bg"
+            android:src="@drawable/ic_brush_white_24dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_margin="@dimen/color_selector_icon_margin"
+            android:layout_width="@dimen/color_selector_tool_btn_diameter"
+            android:layout_height="@dimen/color_selector_tool_btn_diameter"
+            android:id="@+id/imageview_eraser"
+            android:background="@drawable/color_selector_tool_bg"
+            android:src="@drawable/ic_eraser_white"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_margin="@dimen/color_selector_icon_margin"
+            android:layout_width="@dimen/color_selector_tool_btn_diameter"
+            android:layout_height="@dimen/color_selector_tool_btn_diameter"
+            android:id="@+id/imageview_text"
+            android:background="@drawable/color_selector_tool_bg"
+            android:src="@drawable/ic_text_fields_white_24dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_margin="@dimen/color_selector_icon_margin"
+            android:layout_width="@dimen/color_selector_tool_btn_diameter"
+            android:layout_height="@dimen/color_selector_tool_btn_diameter"
+            android:id="@+id/imageview_filters"
+            android:background="@drawable/color_selector_tool_bg"
+            android:src="@drawable/ic_photo_filter_white_24dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_margin="@dimen/color_selector_icon_margin"
+            android:layout_width="@dimen/color_selector_tool_btn_diameter"
+            android:layout_height="@dimen/color_selector_tool_btn_diameter"
+            android:id="@+id/imageview_croping"
+            android:background="@drawable/color_selector_tool_bg"
+            android:src="@drawable/ic_crop_black_24dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_brush_tools_wrapper"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Brush Size"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_marginBottom="@dimen/color_selector_seekbar_margin"
+            android:id="@+id/seekbar_brush_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Opacity"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_marginBottom="@dimen/color_selector_icon_margin"
+            android:id="@+id/seekbar_brush_opacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerview"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_eraser_wrapper"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Eraser Size"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_marginBottom="@dimen/color_selector_seekbar_margin"
+            android:id="@+id/seekbar_eraser_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_text_tools_wrapper"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editext_text_tools"
+            android:hint="Text Here"/>
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:id="@+id/button_add_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_filter_tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_filters"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_croping_tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add shape"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:id="@+id/btn_add_shape"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekbar_shape_size"/>
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+<!--        android:visibility="visible"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:id="@+id/ll_color_selector_wrapper"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        >-->
+
+<!--        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/anushka"-->
+<!--            app:civ_border_color="#EEEEEE"-->
+<!--            app:civ_border_width="4dp"-->
+<!--            app:civ_shadow="true"-->
+<!--            app:civ_shadow_radius="10"-->
+<!--            app:civ_shadow_color="#8BC34A"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <TextView-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="Erasesr Size"/>-->
+<!--    <androidx.appcompat.widget.AppCompatSeekBar-->
+<!--        android:layout_marginBottom="@dimen/color_selector_icon_margin"-->
+<!--        android:id="@+id/seekbar_eraser_size"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+
+
+</LinearLayout>

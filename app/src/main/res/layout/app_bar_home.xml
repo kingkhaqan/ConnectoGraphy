@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:visibility="gone"
+            android:id="@+id/progress_bar_home"
+            android:indeterminateOnly="true"
+            android:indeterminateDuration="10"
+            android:indeterminateBehavior="repeat" />
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/tablayout"-->
+<!--            android:visibility="gone"-->
+<!--            app:tabTextColor="@android:color/white"/>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_home" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin">
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_image"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/fab_drawing"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@android:color/holo_blue_dark"-->
+<!--            android:tooltipText="Upload an Image"-->
+<!--            app:srcCompat="@drawable/crop_image_menu_flip" />-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_drawing"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/fab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@android:color/holo_green_dark"-->
+<!--            android:tooltipText="Draw something to Upload"-->
+<!--            app:srcCompat="@drawable/ic_brush_white_24dp" />-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

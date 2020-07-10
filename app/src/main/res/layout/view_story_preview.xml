@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/iamgeview"/>
+<!--    <ProgressBar-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/progress_bar"-->
+<!--        android:visibility="gone"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="download"-->
+<!--        android:id="@+id/download_button"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="upload"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="oneliner"
+        android:layout_margin="10dp"
+        android:id="@+id/textview_oneliner"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="Initial"
+        android:layout_margin="10dp"
+        android:id="@+id/textview_one"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="On date"
+        android:layout_margin="10dp"
+        android:id="@+id/textview_two"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="From"
+            android:layout_margin="10dp"
+            android:id="@+id/textview_six"/>
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="Completed By"
+        android:layout_margin="10dp"
+        android:id="@+id/textview_three"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="Completed Oneliner"
+            android:layout_margin="10dp"
+            android:id="@+id/textview_four"/>
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="On date"
+        android:layout_margin="10dp"
+        android:id="@+id/textview_five"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="To Location"
+            android:layout_margin="10dp"
+            android:id="@+id/textview_seven"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

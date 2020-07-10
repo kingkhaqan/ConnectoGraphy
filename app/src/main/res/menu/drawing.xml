@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <item-->
+<!--        android:id="@+id/tool_options"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/tool_text"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_color_lens_white_24dp"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/tool_text"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/tool_text"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_text_fields_white_24dp"/>-->
+<!--    <item-->
+<!--        android:id="@+id/tool_eraser"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/tool_eraser"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_eraser_white"/>-->
+<!--    <item-->
+<!--        android:id="@+id/tool_brush"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/tool_brush"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_brush_white_24dp"/>-->
+    <item
+        android:id="@+id/tool_undo"
+        android:orderInCategory="100"
+        android:title="@string/tool_undo"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_undo_white_24dp"/>
+    <item
+        android:id="@+id/tool_redo"
+        android:orderInCategory="100"
+        android:title="@string/tool_redo"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_redo_white_24dp"/>
+    <item
+        android:id="@+id/tool_send"
+        android:orderInCategory="100"
+        android:title="@string/tool_send"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_send_white_24dp"/>
+
+</menu>
